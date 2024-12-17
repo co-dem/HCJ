@@ -1,0 +1,119 @@
+html{
+    display: flex;
+    justify-content: center;
+}
+
+.bg{
+    background-color: #000000;
+    border: solid black 10px;
+    border-radius: 20px;
+    
+    width: 200px;
+    height:250px;
+}
+
+.main_window{
+    background-color: #686D76;
+    border: solid 6px;
+    border-radius: 12px;
+
+    background-image: radial-gradient(circle, #686D76, #686D76, #686D76, black);
+    border-image: radial-gradient(circle, #686D76, black) 1;
+    
+    padding: 4px;
+    margin: 10px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+
+    text-align: center;
+    
+    margin: 4px;
+    padding: 1%;
+
+    width: 30px;
+    
+    font-size: 15px;
+    
+    background-color: #373A40;
+    border: solid 1px #373A40;
+    border-radius: 10px;
+    color: #6FDCE3;
+    filter: drop-shadow(0 0 2px #373A40);
+    
+    transition: 0.2s;
+}
+
+#clear:hover{
+    background-color: #373A40;
+    border: solid 1px #E72929;
+    color: #E72929;
+    filter: drop-shadow(0 0 5px #E72929);
+
+    transition: 0.2s;
+}
+
+#equals:hover{
+    background-color: #373A40;
+    border: solid 1px #FDE767;
+    color: #FDE767;
+    filter: drop-shadow(0 0 5px #FDE767);
+
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: #373A40;
+    border: solid 1px #6FDCE3;
+    color: #6FDCE3;
+    filter: drop-shadow(0 0 5px #6FDCE3);
+
+    transition: 0.2s;
+}
+
+#clear:active, #equals:active, button:active{
+    background-color: #373A40;
+    border: solid 1px #BFD8AF;
+    color: #BFD8AF;
+    filter: drop-shadow(0 0 5px #BFD8AF);
+
+    transition: 0.1s;
+}
+
+.main_input_window{
+    display: flex;
+
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 3%;
+}
+
+.input_place{
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+
+    margin-bottom: 4px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+    border-radius: 5px;
+    
+    text-align: center;
+}
+
+.input_place:disabled{
+    background-color: #BFD8AF;
+    border: solid 3px #5eff004f;
+    filter: drop-shadow(0 0 4px #6FDCE3);
+}

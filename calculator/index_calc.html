@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c0dem calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_calc.css">
+</head>
+<body>
+    <div class="bg" name="bg">
+        <div class="main_window">
+
+            <div class="main_input_window">
+                <input type="text" class="input_place" id="input_place" placeholder="c0dem calculator..." disabled>
+            </div>
+            
+            <div class="btns" name="btns">
+                <div class="btn">
+                    <button id="clear" onclick="btnClicked('C')"> C </button>
+                    <button id="remove_one" onclick="btnClicked('←')"> ← </button>
+                    <button id="square_root" onclick="btnClicked('√')"> √ </button>
+                    <button id="divide" onclick="btnClicked('/')"> / </button>
+                </div>
+
+                <div class="btn">
+                    <button id="nine" onclick="btnClicked('7')"> 7 </button>
+                    <button id="eight" onclick="btnClicked('8')"> 8 </button>
+                    <button id="seven" onclick="btnClicked('9')"> 9 </button>
+                    <button id="multply" onclick="btnClicked('*')"> x </button>
+                </div>
+
+                <div class="btn">
+                    <button id="six" onclick="btnClicked('4')"> 4 </button>
+                    <button id="five" onclick="btnClicked('5')"> 5 </button>
+                    <button id="four" onclick="btnClicked('6')"> 6 </button>
+                    <button id="plus" onclick="btnClicked('+')"> + </button>
+                </div>
+
+                <div class="btn">
+                    <button id="three" onclick="btnClicked('1')"> 1 </button>
+                    <button id="two" onclick="btnClicked('2')"> 2 </button>
+                    <button id="one" onclick="btnClicked('3')"> 3 </button>
+                    <button id="minus" onclick="btnClicked('-')"> - </button>
+                </div>
+
+                <div class="btn">
+                    <!-- <button id="toggle_plus" onclick="btnClicked('±')"> ± </button> -->
+                    <button id="toggle_plus"> ± </button>
+                    <button id="zero" onclick="btnClicked('0')"> 0 </button>
+                    <button id="dot" onclick="btnClicked('.')"> . </button>
+                    <button id="equals" onclick="btnClicked('=')"> = </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main_calc.js"></script>
+</body>
+</html>
